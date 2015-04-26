@@ -1,0 +1,42 @@
+body {
+	font-family: Helvetica;
+	height: 100%;
+}
+
+#container {
+	position: absolute;
+	top: 5vh;
+	left: 5vw;
+	height: 90vh;
+	width: 90vw;
+}
+
+#svgMixer {
+	position: absolute; 
+	height: 100%; 
+	width: 100%; 
+	left: 0; 
+	top:0;
+}
+
+#equation {
+	z-index: 3;
+	position: absolute;
+	background-color: white;
+	opacity: 0.90;
+	text-align: center;
+	visibility: hidden;
+	height: 50%;
+	width: 100%;
+	left: 0;
+	top: 25%;
+}
+
+#clickArea {
+	z-index: 4;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+}
