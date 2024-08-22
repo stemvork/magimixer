@@ -1,6 +1,6 @@
 from random import randint
 
-ops = ['+','-','*','/']
+ops = ['%','+','-','*','/','**']
 
 def roll_target():
     return randint(1, 6) * 10 + randint(1, 6)
