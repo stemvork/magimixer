@@ -8,3 +8,18 @@ print(f"ROLLED: {numbers}")
 
 equation = magix.solve(target, numbers)
 print(f"EQUATN: {equation}")
+
+n = 1_000
+count_succ = 0
+count_fail = 0
+for i in range(n):
+    target = magix.roll_target()
+    numbers = magix.roll_dice()
+    equation = magix.solve(target, numbers)
+    if equation: 
+        count_succ += 1
+    else: 
+        count_fail += 1
+
+print(f"Out of {n} experiments, {count_succ} were solvable and {count_fail} were not solvable.")
+print(f"Percentage of solvable outcomes: {count_succ / n * 100}")
