@@ -3,7 +3,7 @@ After being introduced to the magimixer dice game... it had to become the next p
 
 Features:
 - [x] generate random numbers
-- [ ] start to port the solver
+- [x] start to port the solver
 - [ ] reduce the number of parentheses
 - [ ] expand operations: powers, faculty, modulo
 - [ ] calculate the number of solutions
@@ -16,8 +16,9 @@ python3 main.py
 
 Example output:
 ```
-TARGET: 14
-ROLLED: [1, 3, 3, 6, 6]
+TARGET: 61
+ROLLED: [1, 3, 3, 4, 5]
+EQUATN: ((((5 * 3) + 1) * 4) - 3)
 ```
 
 # magimixer (volucris)
