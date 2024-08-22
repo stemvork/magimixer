@@ -9,6 +9,17 @@ Features:
 - [ ] calculate the number of solutions
 - [ ] ui? statistics? networking?
 
+Usage:
+```
+python3 main.py
+```
+
+Example output:
+```
+TARGET: 14
+ROLLED: [1, 3, 3, 6, 6]
+```
+
 # magimixer (volucris)
 
 The hyperaddictive magimixer (a dice game) improved my arithmetics as a kid and can still keep me and my friends occupied for hours. Generating and solving these little puzzles provides a nice case for my very first github project and phonegap app.
