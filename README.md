@@ -9,24 +9,31 @@ Features:
 - [ ] calculate the number of solutions
 - [ ] ui? statistics? networking?
 
-Usage:
+## Usage (Python)
 ```
 python3 main.py
 ```
 
 Example output:
 ```
-TARGET: 61
-ROLLED: [1, 3, 3, 4, 5]
-EQUATN: ((((5 * 3) + 1) * 4) - 3)
+TARGET: 64
+ROLLED: [2, 3, 4, 4, 5]
+EQUATN: ((4 * 4) * (5 - (3 - 2)))
+Out of 1000 experiments, 902 were solvable and 98 were not solvable.
+Percentage of solvable outcomes: 90.2
 ```
 
-Statistics:
+## Usage (Node)
 ```
-Out of 1000 experiments, 900 were solvable and 100 were not solvable.
-Out of 1000 experiments, 913 were solvable and 87 were not solvable.
-Out of 1000 experiments, 919 were solvable and 81 were not solvable.
-Percentage of solvable outcomes: 90.0 91.3 91.9
+node magix-node.mjs
+```
+
+Example output:
+```
+GOAL:     26
+NUMBERS:  2,2,5,6,6
+EQUATION: (((5 + 2) * 2) + (6 + 6))
+Out of 1000 experiments, 886 were solvable, so about 88.6 percent.
 ```
 
 # magimixer (volucris)

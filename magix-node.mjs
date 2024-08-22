@@ -7,7 +7,9 @@ function roll() {
 function show_solution() {
 	dice_array.sort();
 	equation = solve(goal, dice_array);
-	console.log(`GOAL: ${goal} with NUMBERS: ${dice_array} solved by ${equation}`);
+	console.log(`GOAL:     ${goal}
+NUMBERS:  ${dice_array}
+EQUATION: ${equation}`);
 };
 
 const n = 1000;
@@ -15,7 +17,7 @@ let succ = 0;
 for(let i=0; i<n; ++i) {
   roll();
   if(solve(goal, dice_array)) succ++;
-  // show_solution();
+  if(i === 0) show_solution();
 }
 console.log(`Out of ${n} experiments, ${succ} were solvable, so about ${(succ/n*100).toFixed(1)} percent.`);
 
