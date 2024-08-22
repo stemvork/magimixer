@@ -17,8 +17,10 @@ for i in range(n):
     numbers = magix.roll_dice()
     equation = magix.solve(target, numbers)
     if equation: 
+        # print(f"[SUCC] {equation} for {target} and {numbers}")
         count_succ += 1
     else: 
+        # print(f"[FAIL] {equation} for {target} and {numbers}")
         count_fail += 1
 
 print(f"Out of {n} experiments, {count_succ} were solvable and {count_fail} were not solvable.")
